@@ -1,0 +1,615 @@
+
+/* Fuentes Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base */
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #eaf6fb;
+  color: #003366;
+  min-height: 100vh;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 60px auto; /* Centrado horizontal y espacio superior */
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+/* Centrar títulos dentro del contenedor */
+.container h2 {
+    text-align: center;
+    color: #1680AF;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+/* Contenedor general del formulario */
+.login-form {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cada campo */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+.form-group label {
+    margin-bottom: 5px;
+    color: #1680AF;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Botón con espacio */
+.boton-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* Estilo para botones de formulario */
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #1680AF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Redondeado */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #0e5c7f; /* Azul más oscuro al pasar el mouse */
+}
+
+
+/* Página index */
+.index {
+  text-align: center;
+  padding: 20px;
+}
+
+.index h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.index p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Barra superior */
+header.barra-superior {
+    width: 100%;
+    background-color: #1E90FF;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .titulo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .info-usuario {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+/* Barra de navegación */
+nav.barra-menu {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav.barra-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav.barra-menu a:hover {
+    color: #1E90FF;
+}
+
+/* Contenido principal */
+main.contenido {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+main h2 {
+    margin-bottom: 10px;
+    color: #1E90FF;
+}
+
+.tabla-empleado {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px; /* Espacio entre filas */
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.tabla-empleado tr {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.columna-foto {
+    width: 160px;
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.foto-empleado {
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 3px solid #1E90FF;
+}
+
+.columna-datos {
+    padding: 20px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.columna-datos p {
+    margin-bottom: 8px;
+}
+
+/* Estilos para la página pacientes.jsp */
+.tab-container {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+.tab {
+    padding: 12px 24px;
+    margin-right: 4px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+    background-color: #f8f9fa; /* Fondo más claro al pasar el mouse */
+    color: #007bff;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom: 2px solid white;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+}
+
+.tab-content form input[type="text"],
+.tab-content form input[type="date"],
+.tab-content form input[type="submit"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tab-content table th,
+.tab-content table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tab-content table th {
+    background-color: #f2f2f2;
+}
+
+
+
+#datos-asegurado {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    transition: all 0.3s ease-in-out;
+}
+
+#datos-asegurado h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #343a40;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 8px;
+}
+
+#datos-asegurado p {
+    margin: 6px 0;
+    font-size: 1rem;
+    color: #495057;
+}
+
+#lista-certificados {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #212529;
+}
+
+#lista-certificados li {
+    margin: 4px 0;
+    padding-left: 4px;
+}
+
+.titulotab {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nuevo {
+    margin: auto;
+    width: 80%;
+}
+
+#nuevo .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col1, .col2 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.col1 {width: 30%;}
+.col2 {width: 70%;}
+
+/* Contenedor general de campos de formulario */
+#nuevo .form-group,
+#actualizar .form-group,
+#listar .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo especial solo para este grupo: label, input y botón en una línea */
+.form-group-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* El label se mantiene alineado a la izquierda */
+.form-group-horizontal label {
+    margin-bottom: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contenedor para input y botón */
+.input-button-inline {
+    display: flex;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+/* Ajuste del input dentro del contenedor horizontal */
+.input-button-inline input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Botón Buscar (ya con clases generales) */
+.input-button-inline .btn-buscar {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-button-inline .btn-buscar:hover {
+    background-color: #0056b3;
+}
+
+.input-button-inline {
+    display: flex;
+    align-items: center; /* Esto centra verticalmente todos los hijos */
+    gap: 0.5rem;
+}
+
+.form-group-center {
+    text-align: center;
+}
+
+
+
+/* Etiquetas */
+#nuevo label,
+#actualizar label,
+#listar label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Campos de entrada y selección */
+#nuevo input,
+#actualizar input,
+#listar input,
+#nuevo select,
+#actualizar select,
+#listar select,
+#nuevo textarea,
+#actualizar textarea,
+#listar textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+}
+
+#nuevo input:focus,
+#actualizar input:focus,
+#listar input:focus,
+#nuevo select:focus,
+#actualizar select:focus,
+#listar select:focus,
+#nuevo textarea:focus,
+#actualizar textarea:focus,
+#listar textare:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de tipo submit */
+#nuevo button[type="submit"],
+#actualizar button[type="submit"],
+#listar button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto;
+    width: 50%;
+}
+
+#nuevo button[type="submit"]:hover,
+#actualizar button[type="submit"]:hover,
+#listar button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Botón adicional: Buscar (no submit) */
+.btn-buscar {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buscar:hover {
+    background-color: #0056b3;
+}
+
+#actualizar {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    margin: auto;
+    width: 50%;
+}
+
+#codaseg {
+margin: 0;    
+}
+
+.estado.carente {
+    color: orange;
+    font-weight: bold;
+}
+.estado.vigente {
+    color: green;
+    font-weight: bold;
+}
+.estado.vencido {
+    color: red;
+    font-weight: bold;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.tabla th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header.barra-superior {
+        align-items: flex-start;
+    }
+
+    nav.barra-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.barra-menu a {
+        margin: 5px 0;
+    }
+
+    main.contenido {
+        padding: 10px;
+    }
+}
+
+
+/* Responsividad */
+@media (max-width: 500px) {
+  .container {
+        padding: 20px 15px;
+        margin: 30px 10px;
+  }
+
+  .index h1 {
+    font-size: 1.5em;
+  }
+
+  form button {
+    font-size: 0.95em;
+  }    
+  
+}
+
+/* Responsivo: cuando el ancho sea menor a 600px */
+@media screen and (max-width: 600px) {
+    .top-bar {
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar .titulo {
+        font-size: 16px;
+    }
+
+    .top-bar .bienvenida {
+        font-size: 13px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar a {
+        width: 80%;
+        justify-content: center;
+    }
+}
